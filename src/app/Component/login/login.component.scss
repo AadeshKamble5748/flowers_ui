@@ -1,0 +1,32 @@
+.login {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    z-index: 0;
+    top: 30%;
+    left: 80%;
+    margin: -100px 0 0 -150px;
+    background-color: #b52b79;
+}
+
+.bg {
+    background-color: green;
+}
+
+.form {
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.textcenter {
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+<!-- 
+<div class="row">
+
+    <div class=" col-md-4 bak_color">
+        <table  *ngFor="let u of userList">
+            <td>
+                <tr>
+                    {{u.empId}}
+                </tr>
+            </td>
+            <td>
+                <tr>
+                    {{u.empName}}
+                </tr>
+            </td>
+            <td>
+                <tr>
+                    {{u.dept}}
+                </tr>
+            </td>
+            <td>
+                <tr>
+                    {{20 | usdInr:22}}
+                </tr>
+            </td>
+        </table>   
+    </div>  
+  
+</div>
+ -->
+<app-user-list (userEventEmt)="selectedUserToWork($event)" [userList]="users"></app-user-list>

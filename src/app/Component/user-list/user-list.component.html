@@ -1,0 +1,14 @@
+<p>user-list works!</p>
+<div>
+    <table>
+        <tr>
+            <th>
+                Users List
+            </th>            
+        </tr>
+        <tr *ngFor="let u of userList">
+            <td>{{u}}</td>
+            <td><input type="button" value="Select" (click)="userSelected(u)"></td>
+        </tr>
+    </table>
+</div>
