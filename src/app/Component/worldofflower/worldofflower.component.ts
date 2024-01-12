@@ -10,7 +10,7 @@ export class WorldofflowerComponent implements OnInit {
   data: any;
   flowerList = [
     { "Name": "Jarbera", "Model": "JB01", "Fresh": true },
-    { "Name": "Jarbera", "Model": "JB01", "Fresh": true },
+    { "Name": "Lily", "Model": "JB01", "Fresh": true },
     { "Name": "Jarbera", "Model": "JB01", "Fresh": true },
     { "Name": "Jarbera", "Model": "JB01", "Fresh": true },
     { "Name": "Jarbera", "Model": "JB01", "Fresh": true },

@@ -38,13 +38,13 @@
   </div>
 </nav>
 <div >
-  <table *ngFor="let flower of flowerList">
+  <table>
     <tr>
       <th>FLower Name</th>
       <th>Model</th>
       <th>Status</th>
     </tr>
-    <tr>
+    <tr *ngFor="let flower of flowerList">
       <td>{{ flower.Name }}</td>
       <td>{{ flower.Model }}</td>
       <td>{{ flower.Fresh }}</td>
