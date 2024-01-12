@@ -7,10 +7,11 @@ import { DemocomponentComponent } from './Component/democomponent/democomponent.
 import { WorldofflowerComponent } from './Component/worldofflower/worldofflower.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: '', component: WorldofflowerComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'registration', component: RegistrationComponent },
   { path: 'user', component: UserComponent },
-  { path: 'worldofflower', component: WorldofflowerComponent },
+  
 ];
 
 @NgModule({
