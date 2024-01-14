@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { WorldofflowerComponent } from './Component/worldofflower/worldofflower.component';
 import { UserListComponent } from './Component/user-list/user-list.component';
 import { MatIconModule } from '@angular/material/icon'
+import { CrudModule } from './crud/crud.module';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MatIconModule } from '@angular/material/icon'
     HttpClientModule,
     ReactiveFormsModule,
     MatIconModule,
+    CrudModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
