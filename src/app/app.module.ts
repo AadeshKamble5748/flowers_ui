@@ -13,6 +13,7 @@ import { DemocomponentComponent } from './Component/democomponent/democomponent.
 import { ReactiveFormsModule } from '@angular/forms';
 import { WorldofflowerComponent } from './Component/worldofflower/worldofflower.component';
 import { UserListComponent } from './Component/user-list/user-list.component';
+import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { UserListComponent } from './Component/user-list/user-list.component';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

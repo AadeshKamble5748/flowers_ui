@@ -7,23 +7,25 @@
                 <!-- Email input -->
                 <div class="form-group form-outline mb-4">
                     <input type="text" onpaste="return false" formControlName="email" class="form-control"
-                        [ngClass]="{ 'is-invalid': submitted && f['email'].errors}" placeholder="Email" />
+                        placeholder="Email" />
 
-                    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">                        
-                        <div *ngIf="f['email'].errors">Email is required</div>
-                        <div *ngIf="f['email'].errors">Email must be a valid email address</div>
+                    <div *ngIf="submitted && loginForm.get('email')?.errors" class="invalid-feedback">
+                        Email must be a valid email address
                     </div>
                 </div>
 
                 <!-- Password input -->
                 <div class="form-group form-outline mb-4">
                     <input type="password" onpaste="return false" formControlName="password" class="form-control"
-                        [ngClass]="{'is-invalid': submitted && f['password'].errors}" placeholder="Password" />
-                    
-                        <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
-                        <div *ngIf="f['password'].errors">Password is required</div>
-                        <div *ngIf="f['password'].errors">Password must be at least 6 characters</div>
+                        placeholder="Password" />
+
+                    <div *ngIf="submitted && loginForm.get('password')?.errors" class="invalid-feedback">
+                        Password must be at least 6 characters
                     </div>
+                </div>
+
+                <div>
+                    
                 </div>
 
                 <!-- 2 column grid layout for inline styling -->
@@ -46,6 +48,7 @@
                 <div class="textcenter">
                     <button type="button" class="btn btn-success btn-block" (click)="onSubmit()"
                         [routerLink]="['/worldofflower']">Sign in</button>
+
                     <button type="reset" class="btn btn-primary btn-block m-2" (click)="onReset()">Reset</button>
                 </div>
 
